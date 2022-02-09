@@ -1,0 +1,159 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.site_header {
+  font-size: 0;
+  line-height: 0;
+  padding-top: 46px;
+  margin-bottom: 64px;
+}
+
+.container {
+  width: 900px;
+  margin: 0 auto;
+  padding: 0;
+  /* background-color: palevioletred; */
+}
+
+/* NAVIGATION */
+
+.site_navigation_list {
+  margin: 0 auto;
+  padding: 0 165px;
+  list-style: none;
+  text-align: center;
+}
+
+.site_navigation_item {
+  display: inline-block;
+  margin-right: 100px;
+}
+
+.site_navigation_item:last-child {
+  margin-right: 0;
+}
+
+.site_navigation_item a {
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-family: "PlayfairDisplay";
+  color: rgb(98, 98, 98);
+  text-transform: uppercase;
+  line-height: 16px;
+  text-align: center;
+}
+.site_navigation_item a:hover,
+.site_navigation_item a:focus {
+  color: #03a9f4;
+}
+
+/* ARTICLES */
+.sites_main {
+  font-size: 0;
+  /* line-height: 0; */
+}
+
+.articles_section {
+  margin-bottom: 70px;
+}
+
+.articles_list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.list_item {
+  display: inline-block;
+  width: 420px;
+}
+
+.list_item:not(:nth-child(2n)) {
+  margin-right: 60px;
+}
+
+.list_item:not(:nth-last-child(-n + 2)) {
+  margin-bottom: 142px;
+}
+
+.list_item_category {
+  font-size: 14px;
+  line-height: 16px;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+  color: rgb(180, 173, 158);
+  text-transform: uppercase;
+}
+
+.list_item_title {
+  font-family: "PlayfairDisplay";
+  font-size: 30px;
+  line-height: 36px;
+  color: rgb(98, 98, 98);
+}
+
+.list_item_text {
+  font-size: 14px;
+  font-family: "PlayfairDisplay";
+  color: rgb(98, 98, 98);
+  line-height: 1.714;
+  text-align: left;
+}
+
+/* BUTTON */
+/* .load_more_button_wrapper {
+  display: inline-block;
+  text-align: center;
+} */
+
+.load_more_button {
+  display: block;
+  width: 164px;
+  margin: 0 auto;
+  padding: 14px 0;
+  border: 1px solid rgb(98, 98, 98);
+  font-size: 20px;
+  font-family: "PlayfairDisplay";
+  color: rgb(98, 98, 98);
+  line-height: 24px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.load_more_button:hover,
+.load_more_button:focus {
+  color: #03a9f4;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
